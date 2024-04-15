@@ -12,6 +12,17 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <center>
+            <form action="control" name="lg">
+                <input type="hidden" name="opc" value="1">
+                <table>
+                    <h2>LOGIN</h2>
+                    <tr><td>Usuario<td><input name="usuario">
+                    <tr><td>Contraseña<td><input name="contraseña">
+                    <tr><td><input type="submit" value="Ingresar">
+                        <td><a href="registroCuenta.jsp">Registrarse</a>
+                </table>
+            </form>
+        </center>
     </body>
 </html>
