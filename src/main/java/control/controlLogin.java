@@ -36,8 +36,7 @@ public class controlLogin extends HttpServlet {
         int op=Integer.parseInt(request.getParameter("opc"));
         //if(op==1)validarUsuario(request, response);
     }
-    
-    //Esto es para guardar los datos de los usuarios que se registren b:
+
     protected void registrarUsuario(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession ses=request.getSession();
