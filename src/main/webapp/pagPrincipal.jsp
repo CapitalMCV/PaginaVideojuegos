@@ -12,6 +12,7 @@
         <title>JSP Page</title>
         <link href="STYLES/estilosHeader.css" rel="stylesheet" type="text/css"/>
         <link href="STYLES/estilosFooter.css" rel="stylesheet" type="text/css"/>
+        <link href="STYLES/estilosMain.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header class="header-container">
@@ -47,9 +48,9 @@
             <div class="container-2">
                 <nav class="category-nav">
                     <ul>
-                        <li><a href="ruta_juegos">Juegos</a></li>
-                        <li><a href="ruta_toys">Toys</a></li>
-                        <li><a href="ruta_consolas">Consolas</a></li>
+                        <li><a href="ruta_juegos">JUEGOS</a></li>
+                        <li><a href="ruta_toys">TOYS</a></li>
+                        <li><a href="ruta_consolas">CONSOLAS</a></li>
                     </ul>
                 </nav>
             </div>

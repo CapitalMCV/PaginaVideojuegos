@@ -1,0 +1,66 @@
+/*Esto es para los 3 bloques que iran en el medio*/
+.container-2 {
+    display: flex;
+    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo del contenedor */
+    margin-top: 50px;
+}
+
+.category-nav ul {
+    list-style: none; /* Quita los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    display: flex;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.category-nav li {
+    flex: 1; /* Distribuye el espacio disponible de manera equitativa */
+    text-align: center;
+    position: relative;
+}
+
+.category-nav a {
+    display: block;
+    padding: 250px 190px 250px 190px;
+    text-decoration: none;
+    color: black;
+    background-color: #333;
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    opacity: 70%;
+    font: caption;
+    font-size: 60px;
+}
+
+.category-nav a:hover {
+    background-color: lightgray; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.category-nav li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(149, 149, 149, 0.6); /* Color de la línea */
+}
+
+/*Para la flecha que lleva al footer*/
+.triangle-container {
+    text-align: center;
+}
+
+.trian-link {
+    display: inline-block;
+    width: 0;
+    margin-top: 30px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 40px solid black; /* Cambia "black" por el color deseado */
+}
+
+.trian-link:hover {
+    border-top-color: red; /* Cambia "red" por el color deseado al pasar el mouse */
+}
