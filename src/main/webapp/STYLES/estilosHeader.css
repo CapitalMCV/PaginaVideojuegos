@@ -1,0 +1,187 @@
+/*-------------------Estilo para el contenedor del encabezado-------------------*/
+.container-1 {
+    display: flex; /* Usa un modelo de caja flexible para los elementos hijos */
+    justify-content: space-between; /* Distribuye uniformemente los elementos hijos a lo largo del contenedor */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-top: 20px; /* Desplaza los elementos hacia abajo */
+}
+
+/*Para el botón del login :v*/
+.login-button {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    background-image: url('../images/usuario(1).png');
+    background-size: contain;
+    background-position: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 0rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-left: auto; /* El botón de inicio de sesión se alinea a la derecha */
+}
+
+.login-button:hover {
+    background-color: cadetblue;
+}
+
+/* Estilo para el menú desplegable */
+.menu {
+    margin-right: auto; /* El menú se alinea a la izquierda */
+}
+
+.menu ul {
+    list-style: none; /* Quita los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.menu ul li {
+    position: relative; /* Establece la posición relativa para los elementos del menú */
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: opacity 0.3s ease; /* Agrega una transición suave de opacidad */
+}
+
+/* Estilo para los submenús */
+.menu ul li ul {
+    display: none; /* Oculta los submenús por defecto */
+    position: absolute; /* Los posiciona de forma absoluta con respecto a su contenedor padre */
+    top: 100%; /* Los coloca debajo del elemento padre */
+    left: 0; /* Los alinea con el lado izquierdo del elemento padre */
+    background-color: #fff; /* Color de fondo de los submenús */
+    border: 1px solid #ccc; /* Borde alrededor de los submenús */
+}
+
+/* Muestra los submenús cuando se pasa el mouse sobre el elemento padre */
+.menu ul li:hover > ul {
+    display: block; /* Muestra los submenús */
+}
+
+/* Estilos para los elementos de los submenús */
+.menu ul li ul li {
+    display: block; /* Hace que los elementos de los submenús sean bloques */
+}
+
+/* Estilos para los sub-submenús */
+.menu ul li ul li ul {
+    left: 100%; /* Los coloca a la derecha del elemento padre */
+    top: 0; /* Los coloca en la misma posición vertical que el elemento padre */
+}
+
+.menu ul li a:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Añade una sombra ligera */
+}
+
+/*Para el despliegue del menu*/
+.menu-despliegue {
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/barra-de-menus.png');
+    background-size: contain;
+    background-position: center;
+}
+
+/*Para el titulo*/
+.titulo {
+    font: caption;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+/*Para la barra de busqueda*/
+input[type=text] {
+  padding: 6px 400px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+.search-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-left: 5px;
+    margin-top: 6px;
+    background-color: white;
+    background-image: url('../images/buscar.png');
+    background-size: contain;
+    background-position: center;
+}
+
+/*Esto es para los 3 bloques que iran en el medio*/
+.container-2 {
+    display: flex;
+    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo del contenedor */
+    margin-top: 50px;
+}
+
+.category-nav ul {
+    list-style: none; /* Quita los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    display: flex;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.category-nav li {
+    flex: 1; /* Distribuye el espacio disponible de manera equitativa */
+    text-align: center;
+    position: relative;
+}
+
+.category-nav a {
+    display: block;
+    padding: 290px;
+    text-decoration: none;
+    color: black;
+    background-color: #DEDEDE;
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+.category-nav a:hover {
+    background-color: lightgray; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.category-nav li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(149, 149, 149, 0.6); /* Color de la línea */
+}
+
+/*Para la flecha que lleva al footer*/
+.triangle-container {
+    text-align: center;
+}
+
+.trian-link {
+    display: inline-block;
+    width: 0;
+    margin-top: 30px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 40px solid black; /* Cambia "black" por el color deseado */
+}
+
+.trian-link:hover {
+    border-top-color: red; /* Cambia "red" por el color deseado al pasar el mouse */
+}
